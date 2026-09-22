@@ -72,7 +72,7 @@ kubectl get pods -l app=note -w
 
 Wait until `note-0` is `Running` again, then press Ctrl-C.
 
-The pod that is shutting down can show `Error` for a moment. That is the old container exiting. The replacement is the `note-0` whose age drops back to `0`.
+The pod that is shutting down can show `Error` for a moment. That is the old container exiting. The replacement is the `note-0`.
 
 ```bash
 kubectl exec note-0 -- cat /data/note.txt
